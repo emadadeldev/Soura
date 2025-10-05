@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --button: #1f85f2;
+  }
+  
+  /* Dark Mode styles */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161e27;
+      --text: darkgray;
+      --button: #1f85f2;
+    }
+  }
+
+  a, p {
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text);
+  }
+  
+  #souraTitle {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+  
+  #playPauseButton {
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: var(--button);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #playPauseButton:hover {
+    background-color: #14555b;
+  }
+  
+  footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
+  
+  .footer-heart img {
+    vertical-align: middle;
+  }
+  
+  audio {
+    display: none;
+  }
