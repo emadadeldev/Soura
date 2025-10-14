@@ -13,7 +13,7 @@
   /* Dark Mode styles */
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #161e27;
+      --bg: #22272e;
       --text: darkgray;
       --button: #1f85f2;
     }
