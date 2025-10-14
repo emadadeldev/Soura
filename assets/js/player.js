@@ -1,7 +1,7 @@
 let isPlaying = false;
 
 async function loadSoura() {
-  const reciterId = 168;
+  const reciterId = 102;
   const url = `https://www.mp3quran.net/api/v3/reciters?language=eng&reciter=${reciterId}`;
   try {
     const res = await fetch(url);
