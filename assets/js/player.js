@@ -45,7 +45,7 @@ function playSoura(data) {
   let cur = 0;
 
   const dailySouras = data.slice(idx, idx + 3);
-  const souraNames = dailySouras.map(s => s.name).join(" - ");
+  const souraNames = dailySouras.map(s => s.name).join(" • ");
   title.textContent = `اليوم سُوَر: ${souraNames}`;
 
   const next = () => {
