@@ -24,57 +24,63 @@
     color: var(--text);
   }
   
-  body {
+body {
     min-height: 100vh;
-    background-color: var(--bg);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
+    background-color: var(--bg);
     color: var(--text);
-  }
-  
-  #souraTitle {
-    font-size: 1.2rem;
-    margin-bottom: 50px;
-    padding: 0 20px;
-  }
-  
-  #playPauseButton {
-    font-size: 2rem;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    border-radius: 50%;
-    background-color: var(--button);
-    color: white;
+}
+
+.content {
+    flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
+}
+
+#souraTitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  font-weight: bold;
+}
   
-  #playPauseButton:hover {
-    background-color: #14555b;
-  }
+#playPauseButton {
+  font-size: 2rem;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background-color: var(--button);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
   
-  footer {
-    margin-top: 50px;
-    font-size: 0.9rem;
-    color: #666;
-    text-align: center;
-  }
-  
-  footer p {
-    margin-top: 10px;
-  }
-  
-  .footer-heart img {
-    vertical-align: middle;
-  }
-  
-  audio {
-    display: none;
-  }
+#playPauseButton:hover {
+  background-color: #14555b;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: var(--text);
+  text-align: center;
+  padding: 50px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+.footer-heart img {
+  vertical-align: middle;
+}
+
+audio {
+  display: none;
+}

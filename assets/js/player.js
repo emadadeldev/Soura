@@ -1,7 +1,7 @@
 let isPlaying = false;
 
 async function loadSoura() {
-  const reciterId = 102;
+  const reciterId = 51;
   const url = `https://www.mp3quran.net/api/v3/reciters?language=eng&reciter=${reciterId}`;
   try {
     const res = await fetch(url);
@@ -46,7 +46,7 @@ function playSoura(data) {
 
   const dailySouras = data.slice(idx, idx + 3);
   const souraNames = dailySouras.map(s => s.name).join(" • ");
-  title.textContent = `اليوم سُوَر: ${souraNames}`;
+  title.textContent = `سُوَر اليوم: ${souraNames}`;
 
   const next = () => {
     const s = dailySouras[cur % dailySouras.length];
