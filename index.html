@@ -63,13 +63,10 @@
 
   <script src="assets/js/player.js"></script>
   
-  <script>
-    fetch("https://soura.emadadel4-a0a.workers.dev/log")
-    .then(res => res.json())
-    .then(data => {
-      console.log("Visitors:", data.count);
-    });
-  </script>
+<script>
+  fetch("https://soura.emadadel4-a0a.workers.dev/log")
+    .catch(() => {});
+</script>
 
 </body>
 </html>
