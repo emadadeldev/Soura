@@ -5,16 +5,18 @@
   }
 
   :root {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --button: #1f85f2;
+    --bg: WhiteSmoke;
+    --text: black;
+    --secondaryText: white;
+    --button: #628141;
   }
   
   /* Dark Mode styles */
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #091413;
-      --text: darkgray;
+      --text: WhiteSmoke;
+      --secondaryText: #f5f5f5;
       --button: #628141;
     }
   }
@@ -75,12 +77,14 @@ body {
   cursor: pointer;
 }
 
-#reciterSelect:hover {
-  border-color: var(--button);
+#reciterSelect option:checked {
+  background: var(--button);
+  color: var(--secondaryText);
+  font-weight: bold;
 }
 
-#reciterSelect:focus {
-  border-color: var(--button);
+#reciterSelect option:hover {
+  background: var(--button);
 }
     
 #playPauseButton:hover {
